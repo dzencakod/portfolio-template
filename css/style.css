@@ -228,19 +228,28 @@ button {
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
+  align-items: baseline;
 }
 .menu__logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.menu__button {
+  align-self: flex-start;
+}
 .menu__list {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 50px;
+}
+.menu__list li {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.menu__list li {
   margin: 0 45px;
+  padding: 10px 0;
 }
 .menu__list a {
   font-family: "Epilogue";
@@ -310,6 +319,7 @@ button {
 }
 .main-comment__logo {
   padding: 0 16px 0px 0;
+  align-self: flex-start;
 }
 .main-comment__element {
   display: flex;
