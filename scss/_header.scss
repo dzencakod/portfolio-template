@@ -16,10 +16,6 @@
 	}
 	&__list {
 		align-self: center;
-		// display: flex;
-		// justify-content: start;
-		// align-items: center;
-		// flex-wrap: wrap;
 		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
 		padding-left: 50px;

@@ -12,7 +12,7 @@ body *{
 }
 
 .block-button--bgnone{
-	padding: 15px 30px;
+	padding: 15px 32px;
 	border: 1px solid rgba(255, 255, 255, 0.295743);
 	border-radius: 6px;
 	font-weight: 900;
@@ -93,6 +93,16 @@ body *{
 		margin: 20px 0;
 		line-height: 64px;
 	}
+	&__title--white{
+		font-family: 'Epilogue';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 56px;
+		letter-spacing: -1px;
+		color: #ffffff;
+		margin: 20px 0;
+		line-height: 64px;
+	}
 	&__two-subtitle {
 		font-family: 'Epilogue';
 		font-style: normal;
@@ -156,17 +166,20 @@ body *{
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		border: 1px solid #F3D1BF;
 	}
 
 	&__card--white {
 		background: #fff;
-		border: 1px solid #F3D1BF;
 	}
 	&__card--none {
-		border: 1px solid #F3D1BF;
 	}
 
 	&__card-image {
+		padding: 0  0 20px 0;
+		img{
+			max-width: 80px;
+		}
 	}
 
 	&__card-title {
@@ -174,6 +187,7 @@ body *{
 		font-size: 24px;
 		line-height: 32px;
 		color: #391400;
+		padding: 20px 0;
 	}
 
 	&__card-text {
@@ -204,7 +218,11 @@ body *{
 @import "_header";
 @import "_menu-burger";
 @import "_page";
+@import "_page-dark";
 
+
+@media screen and (max-width:1300px){
+}
 @media screen and (max-width:1160px){
 	.sample{
 		&__image{
@@ -353,6 +371,23 @@ body *{
 			align-self: start;
 		}
 	}
+	.under-service{
+		&__cards{
+			display: grid;
+			grid-template-columns: 100%;
+		}
+	}
+	.portfolio__button{
+		margin-top: 15px;
+	}
+	.portfolio__grid{
+		grid-template-areas:
+			"one"
+			"two"
+			"three"
+			"four";
+		grid-template-rows: 300px 300px 300px 300px;
+	}
 }
 
 @media screen and (max-width:690px){
@@ -363,6 +398,21 @@ body *{
 @media screen and (max-width:550px){
 	.expirience-count{
 		grid-template-columns: 100%;
+	}
+	.portfolio{
+		&__grid{
+			&--element{
+				padding: 15px 0;
+				img{
+					border-radius: 7px;
+				}
+			}
+			&--container{
+				position: absolute;
+				left: 20px;
+				bottom: 50px;
+			}
+		}
 	}
 }
 @media screen and (max-width:450px){

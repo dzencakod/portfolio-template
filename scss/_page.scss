@@ -120,14 +120,10 @@ hr{
 	}
 
 	&__card-image {
-		padding: 0  0 20px 0;
-		img{
-			max-width: 80px;
-		}
 	}
 
 	&__card-title {
-		padding: 20px 0;
+		
 	}
 
 	&__card-text {
@@ -135,5 +131,18 @@ hr{
 
 	&__card--none {
 		padding-top: 80px;
+	}
+}
+.under-service{
+	flex-direction: column;
+	&__a{
+		padding: 25px 0 0 0;
+	}
+	&__cards{
+		padding: 35px 0 40px 0;
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+	}
+	&__card{
 	}
 }

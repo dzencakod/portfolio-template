@@ -13,7 +13,7 @@ body * {
 }
 
 .block-button--bgnone {
-  padding: 15px 30px;
+  padding: 15px 32px;
   border: 1px solid rgba(255, 255, 255, 0.295743);
   border-radius: 6px;
   font-weight: 900;
@@ -99,6 +99,16 @@ body * {
   margin: 20px 0;
   line-height: 64px;
 }
+.sample__title--white {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin: 20px 0;
+  line-height: 64px;
+}
 .sample__two-subtitle {
   font-family: "Epilogue";
   font-style: normal;
@@ -162,19 +172,23 @@ body * {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border: 1px solid #F3D1BF;
 }
 .sample__card--white {
   background: #fff;
-  border: 1px solid #F3D1BF;
 }
-.sample__card--none {
-  border: 1px solid #F3D1BF;
+.sample__card-image {
+  padding: 0 0 20px 0;
+}
+.sample__card-image img {
+  max-width: 80px;
 }
 .sample__card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #391400;
+  padding: 20px 0;
 }
 .sample__card-text {
   font-size: 16px;
@@ -540,17 +554,141 @@ hr {
   max-width: 336px;
   align-self: flex-end;
 }
-.under-features__card-image {
-  padding: 0 0 20px 0;
-}
-.under-features__card-image img {
-  max-width: 80px;
-}
-.under-features__card-title {
-  padding: 20px 0;
-}
 .under-features__card--none {
   padding-top: 80px;
+}
+
+.under-service {
+  flex-direction: column;
+}
+.under-service__a {
+  padding: 25px 0 0 0;
+}
+.under-service__cards {
+  padding: 35px 0 40px 0;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.page-dark {
+  background: #3A3C56;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
+  align-items: center;
+}
+.portfolio__button {
+  margin-top: 65px;
+  align-self: center;
+  transition: all 0.4s;
+}
+.portfolio__button:hover {
+  background: #fff;
+  color: #000;
+}
+.portfolio__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolio__main-subtitle {
+  text-align: center;
+}
+.portfolio__main-title {
+  text-align: center;
+}
+.portfolio__main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.portfolio__main-li {
+  position: relative;
+  padding: 10px 15px;
+  margin: 0 15px;
+  display: flex;
+}
+.portfolio__main-text {
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.64);
+}
+.portfolio__main-li:hover .portfolio__main-text {
+  color: #fff;
+}
+.portfolio__main-li:hover .portfolio__main-count {
+  color: #fff;
+}
+.portfolio__main-count {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  font-size: 14px;
+  line-height: 0px;
+  color: rgba(255, 255, 255, 0.64);
+}
+.portfolio__grid {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "one two two" "three three four";
+}
+.portfolio__grid * {
+  transition: all 0.4s;
+}
+.portfolio__grid--element {
+  padding: 15px;
+  position: relative;
+}
+.portfolio__grid--element img {
+  filter: brightness(80%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.portfolio__grid--element:hover img {
+  filter: brightness(100%);
+}
+.portfolio__grid--element:first-child {
+  grid-area: one;
+}
+.portfolio__grid--element:nth-child(2) {
+  grid-area: two;
+}
+.portfolio__grid--element:nth-child(3) {
+  grid-area: three;
+}
+.portfolio__grid--element:last-child {
+  grid-area: four;
+}
+.portfolio__grid--container {
+  position: absolute;
+  left: 48px;
+  bottom: 50px;
+}
+.portfolio__grid--button {
+  background: #ecebeb;
+  border-radius: 19px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+  padding: 5px 12px;
+  max-height: 38px;
+}
+.portfolio__grid--button:hover {
+  background: #ffffff;
+}
+.portfolio__grid--title {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1160px) {
@@ -688,6 +826,17 @@ hr {
   .under-features__card {
     align-self: start;
   }
+  .under-service__cards {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .portfolio__button {
+    margin-top: 15px;
+  }
+  .portfolio__grid {
+    grid-template-areas: "one" "two" "three" "four";
+    grid-template-rows: 300px 300px 300px 300px;
+  }
 }
 @media screen and (max-width: 690px) {
   .expirience-count {
@@ -697,6 +846,17 @@ hr {
 @media screen and (max-width: 550px) {
   .expirience-count {
     grid-template-columns: 100%;
+  }
+  .portfolio__grid--element {
+    padding: 15px 0;
+  }
+  .portfolio__grid--element img {
+    border-radius: 7px;
+  }
+  .portfolio__grid--container {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
   }
 }
 @media screen and (max-width: 450px) {
