@@ -12,12 +12,18 @@ body *{
 }
 
 .block-button--bgnone{
-	padding: 15px 32px;
+	padding: 18px 34px;
 	border: 1px solid rgba(255, 255, 255, 0.295743);
 	border-radius: 6px;
-	font-weight: 900;
-	font-size: 14px;
 	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 0px;
+	align-self: center;
+	transition: all 0.4s;
+	&:hover{
+		background: #fff;
+		color: #000;
+	}
 }
 .block-button--bgnone:hover{
 	border: 1px solid rgb(255, 255, 255);
@@ -34,22 +40,13 @@ body *{
 .block-button--bg-orange{
 	background: #EF6D58;
 	border-radius: 6px;
-	padding: 10px 18px;
-	font-family: 'Epilogue';
-	font-style: normal;
-	font-weight: 900;
-	font-size: 14px;
-	text-align: center;
+	padding: 9px 18px;
 	text-transform: uppercase;
 	color: #FFFFFF;
 	white-space: nowrap;
 }
 .block-button--bg-bn{
-	padding: 10px 18px;
-	font-family: 'Epilogue';
-	font-family: 'Epilogue';
-	font-style: normal;
-	font-weight: 400;
+	padding: 9px 18px;
 	font-size: 16px;
 	color: #FFFFFF;
 }
@@ -120,6 +117,12 @@ body *{
 		color: rgba(57, 20, 0, 0.64);
 		margin: 18px 0 34px 0;
 	}
+	&__text--white{
+		font-size: 16px;
+		margin: 18px 0 34px 0;
+		line-height: 32px;
+		color: rgba(255, 255, 255, 0.64);
+	}
 	&__button {
 		max-width: 138px;
 		max-height: 48px;
@@ -134,14 +137,20 @@ body *{
 		text-align: center;
 		text-transform: uppercase;
 		color: #391400;
+		box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+		border-radius: 6px;
+		transition: all 0.3s;
 	}
 	&__button:hover{
-		background: rgb(199, 199, 199);
+		box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.318);
 	}
 	&__a{
 		font-size: 16px;
 		line-height: 32px;
 		color: #391400;
+		&:hover{
+			text-shadow: 1px 3px 9px rgba(57, 20, 0, 0.185);
+		}
 	}
 	&__list{
 		display: flex;
@@ -212,6 +221,17 @@ body *{
 			line-height: 32px;
 			color: #391400;
 		}
+		&-text--white{
+			font-size: 14px;
+			line-height: 24px;
+			color: rgba(255, 255, 255, 0.64);
+			max-width: 400px;
+		}
+		&-name--white{
+			font-size: 16px;
+			line-height: 32px;
+			color: #FFFFFF;
+		}
 	}
 }
 @import "_reset";
@@ -275,7 +295,17 @@ body *{
 		&__main--right{
 			padding: 0 0 0 0px;
 		}
+		&__text--white{
+			br{
+				display: none;
+			}
+		}
 	}
+	.item{
+		flex-direction: column-reverse;
+
+	}
+	
 	.expirience-count{
 		&__block{
 		}
@@ -394,6 +424,12 @@ body *{
 	.expirience-count{
 		grid-template-columns: 50% 50%;
 	}
+	.sample__image{
+		img{
+			max-width: 330px;
+			margin-bottom: 15px;
+		}
+	}
 }
 @media screen and (max-width:550px){
 	.expirience-count{
@@ -422,16 +458,24 @@ body *{
 			width: 100%;
 		}
 	}
-	.main__title{
-		font-size: 36px;
-		line-height: 44px;
+	.main{
+		&__title{
+			font-size: 36px;
+			line-height: 44px;
+		}
+		&__button{
+			width: 50%;
+		}
+		&__button:first-child{
+			margin: 0px;
+		}
 	}
 	.sample{
 		&__image{
 			display: flex;
 			justify-content: center;
 			img{
-				max-width: 90%;
+				max-width: 100%;
 				margin-bottom: 15px;
 			}
 		}

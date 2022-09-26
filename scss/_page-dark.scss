@@ -10,12 +10,6 @@
 	align-items: center;
 	&__button{
 		margin-top: 65px;
-		align-self: center;
-		transition: all 0.4s;
-		&:hover{
-			background: #fff;
-			color: #000;
-		}
 	}
 	&__main {
 		display: flex;
@@ -118,6 +112,7 @@
 			font-size: 40px;
 			line-height: 48px;
 			color: #FFFFFF;
+			display: block;
 		}
 	}
 }
