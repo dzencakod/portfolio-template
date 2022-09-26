@@ -427,17 +427,13 @@ button {
   background: #FDF0E9;
 }
 .company {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 35px 0;
-  flex-wrap: wrap;
 }
 .company__block {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px 0 50px 0;
 }
 
 hr {
@@ -680,12 +676,6 @@ hr {
   .menu__button {
     display: none;
   }
-  .company {
-    justify-content: center;
-  }
-  .company__block {
-    width: 33%;
-  }
   .sample {
     flex-direction: column;
   }
@@ -755,12 +745,6 @@ hr {
   }
   .main-comment__logo {
     padding-top: 10px;
-  }
-  .company {
-    justify-content: center;
-  }
-  .company__block {
-    width: 50%;
   }
   .sample {
     padding: 40px 0;

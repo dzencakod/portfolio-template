@@ -272,12 +272,6 @@ body *{
 	.menu__button{
 		display: none;
 	}
-	.company{
-		justify-content: center;
-		&__block{
-			width: 33%;
-		}
-	}
 	.sample{
 		flex-direction: column;
 		&__image{
@@ -356,12 +350,6 @@ body *{
 		align-items: flex-start;
 		&__logo{
 			padding-top: 10px;
-		}
-	}
-	.company{
-		justify-content: center;
-		&__block{
-			width: 50%;
 		}
 	}
 	.sample{
