@@ -78,7 +78,8 @@ hr{
 }
 .video-reel{
 	&__video{
-		width: 40%;
+		width: 100%;
+		margin: 0 auto 0 0;
 		iframe{
 			width: 100%;
 			height: 100%;

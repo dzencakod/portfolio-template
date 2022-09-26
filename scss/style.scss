@@ -328,6 +328,13 @@ body *{
 	.features{
 		flex-direction: column-reverse;
 	}
+	.video-reel__video{
+		justify-content: flex-start;
+		iframe{
+			max-width: 400px;
+			min-height: 225px;
+		}
+	}
 }
 @media screen and (max-width:890px){
 	.item{
@@ -468,7 +475,12 @@ body *{
 			}
 		}
 	}
-	
+	.video-reel__video{
+		iframe{
+			width: 100%;
+			max-height: 180px;
+		}
+	}
 }
 @media screen and (min-width:961px){
 	.burger{

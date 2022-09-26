@@ -498,7 +498,8 @@ hr {
 }
 
 .video-reel__video {
-  width: 40%;
+  width: 100%;
+  margin: 0 auto 0 0;
   padding-bottom: 10px;
 }
 .video-reel__video iframe {
@@ -725,6 +726,13 @@ hr {
   .features {
     flex-direction: column-reverse;
   }
+  .video-reel__video {
+    justify-content: flex-start;
+  }
+  .video-reel__video iframe {
+    max-width: 400px;
+    min-height: 225px;
+  }
 }
 @media screen and (max-width: 890px) {
   .item {
@@ -845,6 +853,10 @@ hr {
   .sample__image img {
     max-width: 100%;
     margin-bottom: 15px;
+  }
+  .video-reel__video iframe {
+    width: 100%;
+    max-height: 180px;
   }
 }
 @media screen and (min-width: 961px) {
